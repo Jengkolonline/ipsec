@@ -35,14 +35,14 @@ echo -e " [\e[36m•2\e[0m] Extending Account PPTP "
 echo -e " [\e[36m•3\e[0m] Delete Account PPTP "
 #echo -e " [\e[36m•5\e[0m] Check User Login XRAY Vless "
 echo -e ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • Wireguard Install •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[36m•4\e[0m] Install PPTP "
-echo -e " [\e[36m•5\e[0m] Stop PPTP "
-echo -e " [\e[36m•5\e[0m] Start PPTP "
-echo -e ""
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#echo -e "\E[0;100;33m       • Wireguard Install •         \E[0m"
+#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#echo -e ""
+#echo -e " [\e[36m•4\e[0m] Install PPTP "
+#echo -e " [\e[36m•5\e[0m] Stop PPTP "
+#echo -e " [\e[36m•5\e[0m] Start PPTP "
+#echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
@@ -57,9 +57,9 @@ case $opt in
 1) clear ; addpptp ; exit ;;
 2) clear ; renewpptp ; exit ;;
 3) clear ; delpptp ; exit ;;
-4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
-5) systemctl stop wg-quick@wg0.service ; exit ;;
-6) systemctl start wg-quick@wg0.service ; exit ;;
+#4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
+#5) systemctl stop wg-quick@wg0.service ; exit ;;
+#6) systemctl start wg-quick@wg0.service ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
