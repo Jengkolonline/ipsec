@@ -54,9 +54,9 @@ echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
-1) clear ; addwg ; exit ;;
-2) clear ; renewwg ; exit ;;
-3) clear ; delwg ; exit ;;
+1) clear ; addpptp ; exit ;;
+2) clear ; renewpptp ; exit ;;
+3) clear ; delpptp ; exit ;;
 4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
 5) systemctl stop wg-quick@wg0.service ; exit ;;
 6) systemctl start wg-quick@wg0.service ; exit ;;
