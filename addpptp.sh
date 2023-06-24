@@ -84,5 +84,5 @@ Password  : $VPN_PASSWORD
 Created   : $hariini
 Expired   : $exp
 ============================
-Script By @XDecrytorId"
+Script By @JENGKOLONLINE"
 EOF
