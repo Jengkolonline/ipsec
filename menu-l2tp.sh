@@ -40,8 +40,8 @@ echo -e "\E[0;100;33m       • L2TP Install •         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e " [\e[36m•4\e[0m] Install L2TP & PPTP "
-echo -e " [\e[36m•5\e[0m] Stop L2TP & PPTP "
-echo -e " [\e[36m•5\e[0m] Start L2TP & PPTP "
+#echo -e " [\e[36m•5\e[0m] Stop L2TP & PPTP "
+#echo -e " [\e[36m•5\e[0m] Start L2TP & PPTP "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -57,9 +57,9 @@ case $opt in
 1) clear ; addl2tp ; exit ;;
 2) clear ; renewl2tp ; exit ;;
 3) clear ; dell2tp ; exit ;;
-4) wget https://raw.githubusercontent.com/Jengkolonline/ipsec/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh ; exit ;;
-5) systemctl stop xl2tpd ; exit ;;
-6) systemctl start xl2tpd ; exit ;;
+4) clear ; wget https://raw.githubusercontent.com/Jengkolonline/ipsec/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh ; exit ;;
+#5) systemctl stop xl2tpd ; exit ;;
+#6) systemctl start xl2tpd ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;
